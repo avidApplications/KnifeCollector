@@ -13,6 +13,8 @@
 		AC5C8DCD1E7B110400D0D20E /* KnifeCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC5C8DCB1E7B110400D0D20E /* KnifeCollection.xcdatamodeld */; };
 		AC5C8DCF1E7B110400D0D20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5C8DCE1E7B110400D0D20E /* Assets.xcassets */; };
 		AC5C8DD21E7B110400D0D20E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5C8DD01E7B110400D0D20E /* LaunchScreen.storyboard */; };
+		AC5C8DDA1E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC5C8DD91E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg */; };
+		ACB0403F1E7C73C5000761BC /* KnifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0403E1E7C73C5000761BC /* KnifeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC5C8DCE1E7B110400D0D20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5C8DD11E7B110400D0D20E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5C8DD31E7B110400D0D20E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5C8DD91E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outdoorEdgeRazorLite.jpg; sourceTree = "<group>"; };
+		ACB0403E1E7C73C5000761BC /* KnifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnifeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				AC5C8DC41E7B110400D0D20E /* AppDelegate.swift */,
+				AC5C8DD91E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg */,
 				AC5C8DC61E7B110400D0D20E /* ViewController.swift */,
 				AC5C8DC81E7B110400D0D20E /* Main.storyboard */,
+				ACB0403E1E7C73C5000761BC /* KnifeViewController.swift */,
 				AC5C8DCE1E7B110400D0D20E /* Assets.xcassets */,
 				AC5C8DD01E7B110400D0D20E /* LaunchScreen.storyboard */,
 				AC5C8DD31E7B110400D0D20E /* Info.plist */,
@@ -94,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Bradley Stovall";
 				TargetAttributes = {
 					AC5C8DC01E7B110300D0D20E = {
@@ -126,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5C8DDA1E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg in Resources */,
 				AC5C8DD21E7B110400D0D20E /* LaunchScreen.storyboard in Resources */,
 				AC5C8DCF1E7B110400D0D20E /* Assets.xcassets in Resources */,
 				AC5C8DCA1E7B110400D0D20E /* Main.storyboard in Resources */,
@@ -139,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB0403F1E7C73C5000761BC /* KnifeViewController.swift in Sources */,
 				AC5C8DCD1E7B110400D0D20E /* KnifeCollection.xcdatamodeld in Sources */,
 				AC5C8DC71E7B110400D0D20E /* ViewController.swift in Sources */,
 				AC5C8DC51E7B110400D0D20E /* AppDelegate.swift in Sources */,
@@ -185,6 +193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -235,6 +244,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -303,6 +313,7 @@
 				AC5C8DD81E7B110400D0D20E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
