@@ -11,13 +11,25 @@ import UIKit
 class KnifeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var knifeImageView: UIImageView!
+    @IBOutlet weak var addUpdateButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     var imageChoice = UIImagePickerController()
+    var knife : Knife? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageChoice.delegate = self
+        
+        if knife != nil {
+           knifeImageView.image = UIImage(data: knife!.image as! Data)
+            titleTextField.text = knife!.title
+            
+            addUpdateButton.setTitle("Update", for: .normal)
+        } else{
+            deleteButton.isHidden = true
+        }
 
         // Do any additional setup after loading the view.
         
@@ -39,16 +51,26 @@ class KnifeViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func cameraTapped(_ sender: Any) {
+        imageChoice.sourceType = .camera
         
+        present(imageChoice, animated: true, completion: nil)
     }
     
     @IBAction func addTapped(_ sender: Any) {
         
-        let context = (UIApplication.shared.delegate as!
-        AppDelegate).persistentContainer.viewContext
-        let knife = Knife(context: context)
-        knife.title = titleTextField.text
-        knife.image = UIImagePNGRepresentation(knifeImageView.image!) as NSData?
+        if knife != nil {
+            knife!.title = titleTextField.text
+            knife!.image = UIImagePNGRepresentation(knifeImageView.image!) as NSData?
+        } else {
+            let context = (UIApplication.shared.delegate as!
+                AppDelegate).persistentContainer.viewContext
+            let knife = Knife(context: context)
+            knife.title = titleTextField.text
+            knife.image = UIImagePNGRepresentation(knifeImageView.image!) as NSData?
+            
+        }
+        
+        
         
         (UIApplication.shared.delegate as!
             AppDelegate).saveContext()
@@ -58,6 +80,18 @@ class KnifeViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
     }
     
+    @IBAction func deleteTapped(_ sender: Any) {
+        let context = (UIApplication.shared.delegate as!
+            AppDelegate).persistentContainer.viewContext
+        
+        context.delete(knife!)
+        
+        (UIApplication.shared.delegate as!
+            AppDelegate).saveContext()
+        
+        navigationController!.popViewController(animated: true)
+        
+    }
 
 
 }

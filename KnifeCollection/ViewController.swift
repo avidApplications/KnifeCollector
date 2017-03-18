@@ -44,4 +44,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.imageView?.image = UIImage(data: knife.image as! Data)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let knife = knives[indexPath.row]
+        performSegue(withIdentifier: "knifeSegue", sender: knife)
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! KnifeViewController
+        nextVC.knife = sender as? Knife
+    }
 }
