@@ -14,6 +14,7 @@
 		AC5C8DCF1E7B110400D0D20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5C8DCE1E7B110400D0D20E /* Assets.xcassets */; };
 		AC5C8DD21E7B110400D0D20E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5C8DD01E7B110400D0D20E /* LaunchScreen.storyboard */; };
 		AC5C8DDA1E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC5C8DD91E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg */; };
+		AC8D505D1E7DF5AF00B39E0C /* screenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = AC8D505C1E7DF5AF00B39E0C /* screenShot.png */; };
 		ACB0403F1E7C73C5000761BC /* KnifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0403E1E7C73C5000761BC /* KnifeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		AC5C8DD11E7B110400D0D20E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5C8DD31E7B110400D0D20E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC5C8DD91E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outdoorEdgeRazorLite.jpg; sourceTree = "<group>"; };
+		AC8D505C1E7DF5AF00B39E0C /* screenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot.png; sourceTree = "<group>"; };
 		ACB0403E1E7C73C5000761BC /* KnifeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KnifeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +64,7 @@
 			children = (
 				AC5C8DC41E7B110400D0D20E /* AppDelegate.swift */,
 				AC5C8DD91E7B1AD100D0D20E /* outdoorEdgeRazorLite.jpg */,
+				AC8D505C1E7DF5AF00B39E0C /* screenShot.png */,
 				AC5C8DC61E7B110400D0D20E /* ViewController.swift */,
 				ACB0403E1E7C73C5000761BC /* KnifeViewController.swift */,
 				AC5C8DC81E7B110400D0D20E /* Main.storyboard */,
@@ -105,6 +108,7 @@
 				TargetAttributes = {
 					AC5C8DC01E7B110300D0D20E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JGYXSDX8NM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +140,7 @@
 				AC5C8DD21E7B110400D0D20E /* LaunchScreen.storyboard in Resources */,
 				AC5C8DCF1E7B110400D0D20E /* Assets.xcassets in Resources */,
 				AC5C8DCA1E7B110400D0D20E /* Main.storyboard in Resources */,
+				AC8D505D1E7DF5AF00B39E0C /* screenShot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JGYXSDX8NM;
 				INFOPLIST_FILE = KnifeCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bright-avenue.KnifeCollection";
@@ -286,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JGYXSDX8NM;
 				INFOPLIST_FILE = KnifeCollection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bright-avenue.KnifeCollection";

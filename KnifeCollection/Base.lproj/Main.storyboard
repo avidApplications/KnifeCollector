@@ -63,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outdoorEdgeRazorLite.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fTQ-0N-BpI">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenShot.png" translatesAutoresizingMaskIntoConstraints="NO" id="fTQ-0N-BpI">
                                 <rect key="frame" x="37.5" y="84" width="300" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Xxs-sd-buQ"/>
@@ -150,6 +150,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="outdoorEdgeRazorLite.jpg" width="3000" height="2250"/>
+        <image name="screenShot.png" width="396" height="144"/>
     </resources>
 </document>
